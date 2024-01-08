@@ -19,6 +19,6 @@ void RegisterFireworksRecipe() {
         auto nbt = GMLIB::CompoundTagHelper::getNbt(&item);
         nbt->getCompound("tag")->getCompound("Fireworks")->putByte("Flight", 5 * (i + 1));
         GMLIB::CompoundTagHelper::setNbt(&item, nbt.get());
-        GMLIB::Mod::Recipe::RapidRecipeLoader::registerLockedShapelessCraftingTableRecipe(recipeId, ingredients, item);
+        GMLIB::Mod::Recipe::RapidRecipeLoader::registerLockedShapelessCraftingTableRecipe(recipeId, ingredients, &item, 2);
     }
 }

@@ -11,6 +11,7 @@ Plugin::Plugin(ll::plugin::NativePlugin& self) : mSelf(self) {
 
 bool Plugin::enable() {
     // Code for enabling the plugin goes here.
+    RegisterFireworksRecipe();
     return true;
 }
 

@@ -4,3 +4,4 @@
 #define PLUGIN_NAME "plugin"
 
 extern ll::Logger logger;
+extern void RegisterFireworksRecipe();
