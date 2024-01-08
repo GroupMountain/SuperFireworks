@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "tooth": "github.com/GroupMountain/SuperFireworks",
+    "version": "0.3.0",
+    "info": {
+        "name": "SuperFireworks",
+        "description": "Super Fireworks made of TNT!",
+        "author": "Tsubasa6848",
+        "source": "github.com/GroupMountain/SuperFireworks",
+        "tags": [
+            "LeveLamina",
+            "GMLIB",
+            "SuperFireworks"
+        ]
+    },
+    "files": {
+        "place": [
+            {
+                "src": "SuperFireworks/*",
+                "dest": "plugins/SuperFireworks"
+            }
+        ]
+    }
+}
