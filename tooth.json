@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "tooth": "github.com/GroupMountain/SuperFireworks",
-    "version": "0.3.0",
+    "version": "0.4.1",
     "info": {
         "name": "SuperFireworks",
         "description": "Super Fireworks made of TNT!",
@@ -14,7 +14,7 @@
         ]
     },
     "dependencies": {
-        "github.com/GroupMountain/GMLIB": ">=0.3.0"
+        "github.com/GroupMountain/GMLIB": ">=0.4.1"
     },
     "files": {
         "place": [

@@ -1,5 +1,6 @@
-#include "Global.h"
 #include "Plugin.h"
+#include "Global.h"
+#include <GMLIB/GMLIB.h>
 
 ll::Logger logger(PLUGIN_NAME);
 
@@ -11,7 +12,18 @@ Plugin::Plugin(ll::plugin::NativePlugin& self) : mSelf(self) {
 
 bool Plugin::enable() {
     // Code for enabling the plugin goes here.
-    RegisterFireworksRecipe();
+    auto requireLibVersion = SemVersion(0, 4, 1, "", "");
+    if (GMLIB::Version::checkLibVersionMatch(requireLibVersion)) {
+        RegisterFireworksRecipe();
+        logger.info("SuperFireworks Recipes Registered Successfully!");
+    } else {
+        logger.error("GMLIB Version is outdated! Please update your GMLIB!");
+        logger.error(
+            "Current GMLIB Version {}, Required Lowest GMLIB Version {}",
+            GMLIB::Version::getLibVersionString(),
+            requireLibVersion.asString()
+        );
+    }
     return true;
 }
 

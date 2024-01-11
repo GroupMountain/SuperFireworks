@@ -1,5 +1,6 @@
 {
     "name": "SuperFireworks",
     "entry": "SuperFireworks.dll",
-    "type": "native"
+    "type": "native",
+    "version": "0.4.1"
 }
