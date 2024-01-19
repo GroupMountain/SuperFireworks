@@ -14,7 +14,7 @@
         ]
     },
     "dependencies": {
-        "github.com/GroupMountain/GMLIB": ">=0.4.1"
+        "github.com/GroupMountain/GMLIB": ">=0.5.0"
     },
     "files": {
         "place": [
