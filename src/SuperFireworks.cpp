@@ -11,7 +11,7 @@ void RegisterFireworksRecipe() {
     auto nbt = item->getNbt();
     nbt->getCompound("tag")->putCompound("Fireworks", CompoundTag{});
     nbt->getCompound("tag")->getCompound("Fireworks")->put("Explosions", ListTag{});
-    item->setNbt(nbt.get());
+    item->setNbt(*nbt);
     std::vector<Recipes::Type> ingredients = {
         Recipes::Type("minecraft:paper", 'A', 1, 0)
     };
@@ -20,7 +20,7 @@ void RegisterFireworksRecipe() {
         std::string recipeId = "groupmountain:superfirework" + std::to_string(i + 1);
         auto nbt = item->getNbt();
         nbt->getCompound("tag")->getCompound("Fireworks")->putByte("Flight", 5 * (i + 1));
-        item->setNbt(nbt.get());
+        item->setNbt(*nbt);
         GMLIB_CustomRecipe::registerLockedShapelessCraftingTableRecipe(recipeId, ingredients, item);
     }
 }
