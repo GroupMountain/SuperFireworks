@@ -1,2 +1,2 @@
-# GMLIB-Plugin-Template
-Template for plugins using GMLIB
+# SuperFireworks
+Super Fireworks made of TNT!
