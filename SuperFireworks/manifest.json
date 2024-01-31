@@ -2,7 +2,7 @@
     "name": "SuperFireworks",
     "entry": "SuperFireworks.dll",
     "type": "native",
-    "version": "0.5.1",
+    "version": "0.6.0",
     "dependencies": [
         {
             "name": "GMLIB"
