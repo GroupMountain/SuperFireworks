@@ -12,6 +12,7 @@
             "SuperFireworks"
         ]
     },
+    "asset_url": "https://github.com/GroupMountain/SuperFireworks/releases/download/v0.8.0/SuperFireworks-windows-x64.zip",
     "dependencies": {
         "github.com/GroupMountain/GMLIB": ">=0.5.4"
     },
