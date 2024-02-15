@@ -1,14 +1,13 @@
 {
     "format_version": 2,
     "tooth": "github.com/GroupMountain/SuperFireworks",
-    "version": "0.6.0",
+    "version": "0.8.0",
     "info": {
         "name": "SuperFireworks",
         "description": "Super Fireworks made of TNT!",
-        "author": "Tsubasa6848",
-        "source": "github.com/GroupMountain/SuperFireworks",
+        "author": "GroupMountain",
         "tags": [
-            "LeveLamina",
+            "LeviLamina",
             "GMLIB",
             "SuperFireworks"
         ]

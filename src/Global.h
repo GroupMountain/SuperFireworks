@@ -1,5 +1,5 @@
 #pragma once
-#include "include_all.h"
+#include <include_all.h>
 
 #define PLUGIN_NAME "SuperFireworks"
 
