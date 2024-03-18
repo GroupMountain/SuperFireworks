@@ -1,7 +1,4 @@
 #include "Global.h"
-#include <GMLIB/Server/CompoundTagAPI.h>
-#include <GMLIB/Mod/CustomRecipe.h>
-#include <GMLIB/Server/ItemStackAPI.h>
 
 void RegisterFireworksRecipe() {
     auto it = ItemStack{"minecraft:firework_rocket"};
@@ -21,6 +18,6 @@ void RegisterFireworksRecipe() {
         auto nbt = item->getNbt();
         nbt->getCompound("tag")->getCompound("Fireworks")->putByte("Flight", 5 * (i + 1));
         item->setNbt(*nbt);
-        GMLIB::Mod::CustomRecipe::registerLockedShapelessCraftingTableRecipe(recipeId, ingredients, item);
+        GMLIB::Mod::CustomRecipe::registerShapelessCraftingTableRecipe(recipeId, ingredients, item);
     }
 }

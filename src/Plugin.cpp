@@ -12,18 +12,8 @@ Plugin::Plugin(ll::plugin::NativePlugin& self) : mSelf(self) {
 
 bool Plugin::enable() {
     // Code for enabling the plugin goes here.
-    auto requireLibVersion = SemVersion(0, 5, 4, "", "");
-    if (GMLIB::Version::checkLibVersionMatch(requireLibVersion)) {
-        RegisterFireworksRecipe();
-        logger.info("SuperFireworks Recipes Registered Successfully!");
-    } else {
-        logger.error("GMLIB Version is outdated! Please update your GMLIB!");
-        logger.error(
-            "Current GMLIB Version {}, Required Lowest GMLIB Version {}",
-            GMLIB::Version::getLibVersionString(),
-            requireLibVersion.asString()
-        );
-    }
+    RegisterFireworksRecipe();
+    logger.info("SuperFireworks Recipes Registered Successfully!");
     return true;
 }
 
