@@ -4,4 +4,6 @@
 #define PLUGIN_NAME "SuperFireworks"
 
 extern ll::Logger logger;
+
 extern void RegisterFireworksRecipe();
+extern void RegisterCreativeItem();
