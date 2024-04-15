@@ -16,7 +16,6 @@ void RegisterFireworksRecipe() {
         nbt->getCompound("tag")->getCompound("Fireworks")->putByte("Flight", 5 * (i + 1));
         item.setNbt(*nbt);
         GMLIB::Mod::CustomRecipe::registerShapelessCraftingTableRecipe(recipeId, ingredients, &item);
-        Item::addCreativeItem(ll::service::getLevel()->getItemRegistry(), item);
     }
 }
 
