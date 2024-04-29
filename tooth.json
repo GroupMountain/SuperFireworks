@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "tooth": "github.com/GroupMountain/SuperFireworks",
-    "version": "0.11.1",
+    "version": "0.12.0",
     "info": {
         "name": "SuperFireworks",
         "description": "Super Fireworks made of TNT!",
@@ -12,9 +12,9 @@
             "SuperFireworks"
         ]
     },
-    "asset_url": "https://github.com/GroupMountain/SuperFireworks/releases/download/v0.11.1/SuperFireworks-windows-x64.zip",
+    "asset_url": "https://github.com/GroupMountain/SuperFireworks/releases/download/v0.12.0/SuperFireworks-windows-x64.zip",
     "dependencies": {
-        "github.com/GroupMountain/GMLIB": ">=0.10.0"
+        "github.com/GroupMountain/GMLIB": ">=0.12.1"
     },
     "files": {
         "place": [
